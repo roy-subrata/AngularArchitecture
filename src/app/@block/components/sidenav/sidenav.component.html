@@ -1,0 +1,12 @@
+<p>Hello</p>
+<div *ngFor="let menu of muneItems">
+    <div class="nav-menu">
+        <li>
+            <a routerLink="{{menu.routeLink}}">{{menu.name}}</a>
+        </li>
+    </div>
+    <ng-container>
+        <false-nav [items]="menu.SubMenu"></false-nav>
+    </ng-container>
+
+</div>
